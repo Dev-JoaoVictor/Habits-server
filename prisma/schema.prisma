@@ -11,7 +11,7 @@ generator erd {
 
 datasource db {
   provider = "sqlite"
-  // url      = env("DATA_BASE_URL")
+  url      = env("DATA_BASE_URL")
 }
 
 model Habit {
