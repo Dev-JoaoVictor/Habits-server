@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "18"
+  },
   "scripts": {
-    "dev": "tsx watch src/server.ts"
+    "dev": "tsx watch src/server.ts",
+    "build": "tsup src",
+    "start": "node dist/server.js"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +19,7 @@
     "@prisma/client": "^4.10.1",
     "dayjs": "^1.11.7",
     "fastify": "^4.13.0",
+    "tsup": "^6.6.3",
     "zod": "^3.20.6"
   },
   "devDependencies": {
